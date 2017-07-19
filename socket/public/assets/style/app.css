@@ -1,0 +1,210 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+body{
+    background: url(https://res.wx.qq.com/zh_CN/htmledition/v2/images/web_wechat_login_bg27a55f.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.userform-wrapper,.chat-room-wrapper{
+    width:100%;
+    height:100%;
+    /*-webkit-transition: all 1s;*/
+    /*-moz-transition: all 1s;*/
+    /*-ms-transition: all 1s;*/
+    /*-o-transition: all 1s;*/
+    /*transition: all 1s;*/
+}
+.userform-wrapper{
+    background-color:#242628;
+}
+
+.userform-wrapper form.login{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.userform-wrapper.ng-hide-add, .userform-wrapper.ng-hide-remove {
+    -webkit-transition:all linear 5s;
+    -moz-transition:all linear 0.5s;
+    -o-transition:all linear 0.5s;
+    transition:all linear 5s;
+    display:block!important;
+}
+
+.userform-wrapper.ng-hide-add.ng-hide-add-active,
+.userform-wrapper.ng-hide-remove {
+    opacity:0;
+}
+
+.userform-wrapper.ng-hide-add,
+.userform-wrapper.ng-hide-remove.ng-hide-remove-active {
+    opacity:1;
+}
+
+
+.chat-room-wrapper{
+    min-width: 800px;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chat-room-wrapper .chat-room .panel-body{
+    position: absolute;
+    top: 38px;
+    bottom: 55px;
+    overflow: auto;
+    width: 100%;
+    background-color: RGB(238, 238, 238);
+}
+.chat-room-wrapper .panel-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.chat-room-wrapper .panel-footer input[type='text']{
+    width: 90%;
+}
+
+.chat-room-wrapper .chat-room{
+    position: relative;
+    float: right;
+    height: 100%;
+    width:75%;
+}
+.chat-room-wrapper .online{
+    position: relative;
+    width: 24%;
+    float: left;
+    height: 100%;
+}
+.chat-room-wrapper .online .user-number{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    background: lightgray;
+    display: inline-block;
+    border-radius: 50%;
+    color: crimson;
+    vertical-align: text-top;
+    line-height: 20px;
+    font-size: 13px;
+}
+.chat-room-wrapper .online .user-wrapper{
+    background: RGB(238, 238, 238);
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+    top: 38px;
+    bottom: 0;
+    padding: 0;
+}
+.chat-room-wrapper .online .user-wrapper .user{
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.chat-room-wrapper .online .user-wrapper .user:hover{
+    background-color: RGB(245, 250, 255);
+}
+.chat-room-wrapper .online .user-wrapper .user .avatar{
+    vertical-align: middle;
+}
+.chat-room-wrapper .online .user-wrapper .user .nickname{
+    margin-left: 20px;
+    vertical-align: middle;
+    color: rgba(0,0,0,.7);
+}
+.chat-room-wrapper .online .user-wrapper .user .unread{
+    vertical-align: middle;
+    margin-right: 5px;
+    color: red;
+}
+.chat-room-wrapper .system-notification{
+    background-color: lightsalmon;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.chat-room-wrapper .normal-message{
+    text-align: right;
+    margin:0 10px 20px 20px;
+}
+.chat-room-wrapper .normal-message.others{
+    text-align: left;
+}
+.chat-room-wrapper .normal-message .name-wrapper{
+    color: rgba(0,0,0,.5);
+}
+.chat-room-wrapper .normal-message .content{
+    display: inline-block;
+    background-color: #b2e281;
+    padding: 10px 20px;
+    color: rgba(0,0,0,.7);
+    border-radius: 3px;
+    position: relative;
+    margin-top: 5px;
+    max-width: 60%;
+    min-height: 40px;
+    text-align: left;
+}
+.chat-room-wrapper .normal-message.others .content-wrapper{
+    position: relative;
+}
+.chat-room-wrapper .normal-message.others .content{
+    position: absolute;
+    margin-left: 50px;
+    background-color: #fff;
+}
+.chat-room-wrapper .normal-message.self .content:after,.chat-room-wrapper .normal-message.others .content:before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 10px;
+    display: block;
+    border:6px solid transparent;
+}
+.chat-room-wrapper .normal-message.self .content:after{
+    left: 100%;
+    border-left:4px solid #b2e281;
+}
+.chat-room-wrapper .normal-message.others .content:before{
+    right: 100%;
+    border-right:4px solid #fff;
+}
+
+.chat-room-wrapper .avatar{
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    vertical-align: top;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.chat-room-wrapper .others .avatar{
+    margin-left: 0;
+    margin-right: 10px;
+}
+.yes{
+    color: yellow;
+}
+.no{
+    color: purple;
+}
