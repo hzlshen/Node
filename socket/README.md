@@ -1,13 +1,11 @@
-AngularJS Chat Room
-=====================
-一个基于AngularJS、NodeJS、Express、socket.io搭建的在线聊天室。
+AngularJS socket Room
+  
+  练手demo，并非原创
+  来源：https://github.com/sheila1227
 
-##DEMO
-地址：http://45.79.97.45:3002/
 
-##How to use
 
-  git clone https://github.com/sheila1227/ChatRoom-AngularJS
+  git clone https://github.com/hzlshen/node.git
   
   cd ChatRoom-AngularJS
   
@@ -15,6 +13,6 @@ AngularJS Chat Room
   
   npm install
   
-  ...
-  
   node app.js
+  
+  输入打开： http://127.0.0.1:3002/
