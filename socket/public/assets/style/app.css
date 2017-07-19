@@ -30,6 +30,7 @@ body{
     top: 40%;
     width: 100%;
 }
+
 .userform-wrapper.ng-hide-add, .userform-wrapper.ng-hide-remove {
     -webkit-transition:all linear 5s;
     -moz-transition:all linear 0.5s;

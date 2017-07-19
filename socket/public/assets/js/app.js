@@ -1,5 +1,5 @@
 
-var app=angular.module("chatRoom",[]);
+var app=angular.module("socketroom",[]);
 
 app.factory('socket', function($rootScope) {
     var socket = io(); //默认连接部署网站的服务器
