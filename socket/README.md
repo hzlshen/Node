@@ -5,7 +5,6 @@ AngularJS Chat Room
 	
 	练手demo，并非原创
 
-  原创地址： https://github.com/sheila1227/ChatRoom-AngularJS
   
   cd 
 
