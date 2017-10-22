@@ -4,6 +4,8 @@ AngularJS Chat Room
 	一个基于angularjs、express、socket做的简易聊天室
 	
 	练手demo，并非原创
+	
+![Image text](https://github.com/hzlshen/Imgage_box/blob/master/node-socket.png)
 
   
   cd 
