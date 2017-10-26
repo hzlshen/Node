@@ -1,4 +1,10 @@
-小程序，开发ing...
+node+express搭的hbs项目架子
 =====================
+
+clone 
+
+cd 
+
+node app.js
 		
 	
