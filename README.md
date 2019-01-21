@@ -1,11 +1,5 @@
-node+express搭的hbs项目架子
-websocket聊天室的搭建
+### Node.js 学习之旅
 =====================
 
-clone 
-
-cd 
-
-node app.js
 		
 	
